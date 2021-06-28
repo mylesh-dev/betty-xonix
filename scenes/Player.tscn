@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/player.gd" type="Script" id=1]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 4.55165
+
+[node name="Player" type="Area2D"]
+position = Vector2( 12.3125, 6.125 )
+gravity = 0.0
+linear_damp = 0.0
+angular_damp = 0.0
+script = ExtResource( 1 )
+
+[node name="Shape" type="CollisionShape2D" parent="."]
+position = Vector2( 0.102245, 0.117052 )
+shape = SubResource( 1 )
